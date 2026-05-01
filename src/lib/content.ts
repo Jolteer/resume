@@ -56,106 +56,77 @@ export type BlogPost = {
 };
 
 export const site = {
-  name: "Alex Morgan",
-  initials: "AM",
-  headline: "Senior Software Engineer & Systems Designer",
+  name: "Joshua Day",
+  initials: "JD",
+  headline: "Software Engineer",
   tagline:
-    "I build resilient backend platforms and thoughtful product experiences. Currently focused on developer tooling, distributed systems, and the craft of well-engineered software.",
-  location: "San Francisco, California",
-  email: "hello@alexmorgan.dev",
+    "Cross-platform mobile and web developer building full-stack applications with Flutter, React, and Python. Recent Applied Software Engineering graduate from Northern Kentucky University.",
+  location: "Newport, Kentucky",
+  email: "Joshua.day30@gmail.com",
   resumeHref: "/resume",
-  yearsExperience: 9,
+  yearsExperience: 4,
 };
 
 export const nav: NavLink[] = [
   { href: "/", label: "Home" },
   { href: "/#experience", label: "Experience" },
   { href: "/projects", label: "Projects" },
-  { href: "/blog", label: "Writing" },
   { href: "/resume", label: "Résumé" },
   { href: "/#contact", label: "Contact" },
 ];
 
 export const socials: SocialLink[] = [
-  { href: "https://github.com/", label: "GitHub", username: "alexmorgan" },
   {
-    href: "https://linkedin.com/in/",
-    label: "LinkedIn",
-    username: "alex-morgan",
+    href: "https://github.com/Jolteer",
+    label: "GitHub",
+    username: "Jolteer",
   },
-  { href: "https://twitter.com/", label: "Twitter", username: "@alexmorgan" },
   {
-    href: "mailto:hello@alexmorgan.dev",
+    href: "https://www.linkedin.com/in/joshuamday7/",
+    label: "LinkedIn",
+    username: "joshuamday7",
+  },
+  {
+    href: "mailto:Joshua.day30@gmail.com",
     label: "Email",
-    username: "hello@alexmorgan.dev",
+    username: "Joshua.day30@gmail.com",
   },
 ];
 
 export const aboutParagraphs: string[] = [
-  "I'm a software engineer based in San Francisco with nearly a decade of experience designing and operating systems that need to be both elegant and durable. My work spans developer tooling, infrastructure, and product engineering — and I find the connective tissue between those layers to be where the most interesting problems live.",
-  "I care deeply about craft. That means readable code, considered API design, honest documentation, and software that ages well. I've been fortunate to work alongside teams that share that conviction, and the work I'm proudest of has been quiet, foundational work that quietly improved the lives of every engineer downstream of it.",
-  "Outside of work, I write occasionally about the practice of engineering, mentor early-career developers, and spend a fair amount of time in the woods.",
+  "I'm a software engineer based in Newport, Kentucky, with a B.S. in Applied Software Engineering and a minor in Information Security from Northern Kentucky University. I focus on building cross-platform applications — mobile, web, and desktop — that pair clean front-end experiences with thoughtful, well-tested backends.",
+  "My recent work spans Flutter mobile apps, React/Electron desktop apps, and FastAPI services backed by PostgreSQL. I'm particularly drawn to projects that combine product polish with non-trivial backend work, like my capstone — a finance app that uses machine-learning categorization to help users build better spending habits.",
+  "Outside of building software, I spent three years working at Kroger Pharmacy, where I learned the kind of attention-to-detail and calm-under-pressure that translates surprisingly well into shipping production code.",
 ];
 
 export const experience: ExperienceEntry[] = [
   {
-    company: "Northwind Systems",
-    role: "Senior Staff Engineer",
-    location: "San Francisco, CA",
+    company: "Kroger Pharmacy",
+    role: "Pharmacy Technician",
+    location: "Northern Kentucky",
     startDate: "2023",
     endDate: "Present",
     summary:
-      "Lead engineer on the developer platform team, responsible for the internal toolchain used by 600+ engineers across the company.",
+      "Three years filling prescriptions and supporting pharmacists in a high-volume retail pharmacy while completing my Applied Software Engineering degree.",
     highlights: [
-      "Designed and shipped a unified build orchestration layer that reduced average CI runtime from 23 minutes to 4 minutes across 80+ services.",
-      "Authored the technical strategy for a multi-year migration to a service-mesh architecture, now adopted as the company-wide standard.",
-      "Mentored a team of seven engineers; promoted three to senior level during my tenure.",
+      "Maintained accuracy in a fast-paced environment where small mistakes have real consequences for patient safety.",
+      "Built rapport with hundreds of repeat customers, balancing speed of service with careful, individual attention.",
+      "Learned to work calmly under sustained pressure — a skill that has translated directly into incident-response and debugging discipline in software work.",
     ],
-    stack: ["Go", "TypeScript", "Kubernetes", "PostgreSQL", "Bazel"],
-  },
-  {
-    company: "Halcyon Labs",
-    role: "Staff Software Engineer",
-    location: "Remote",
-    startDate: "2020",
-    endDate: "2023",
-    summary:
-      "Founding engineer at a developer-tools startup; helped grow the engineering team from 4 to 35 and the product from prototype to Series B.",
-    highlights: [
-      "Designed the company's distributed task execution engine, processing roughly 12 million workflow runs per month at peak.",
-      "Owned the public REST and gRPC APIs end-to-end — design, versioning, documentation, and SDK generation for four languages.",
-      "Wrote the engineering interview rubric and conducted 200+ technical interviews during the hiring scale-up.",
-    ],
-    stack: ["Rust", "Python", "Postgres", "Redis", "Terraform"],
-  },
-  {
-    company: "Ironwood Technology",
-    role: "Software Engineer, Platform",
-    location: "Seattle, WA",
-    startDate: "2017",
-    endDate: "2020",
-    summary:
-      "Worked on the data platform team supporting analytics workloads for a Fortune 500 retailer.",
-    highlights: [
-      "Built the streaming ingestion pipeline that backed the company's real-time inventory dashboard.",
-      "Reduced cloud spend on the analytics warehouse by 41% through query optimization and storage-tier reorganization.",
-      "Created the team's on-call runbook, which became the template adopted across the broader engineering org.",
-    ],
-    stack: ["Java", "Kafka", "Snowflake", "Airflow"],
   },
 ];
 
 export const education: EducationEntry[] = [
   {
-    institution: "University of Washington",
+    institution: "Northern Kentucky University",
     degree: "B.S.",
-    field: "Computer Science",
-    location: "Seattle, WA",
-    startDate: "2013",
-    endDate: "2017",
+    field: "Applied Software Engineering, Minor in Information Security",
+    location: "Highland Heights, KY",
+    startDate: "2022",
+    endDate: "2026",
     details: [
-      "Graduated with Honors. Concentration in Distributed Systems.",
-      "Teaching assistant for CSE 451: Operating Systems (3 quarters).",
+      "Capstone (ASE 485): SmartSpend — a cross-platform Flutter + FastAPI personal-finance app with ML-based transaction categorization, budget generation, and savings recommendations.",
+      "Coursework spanning full-stack development, software architecture, secure coding, networking, and information security.",
     ],
   },
 ];
@@ -163,165 +134,142 @@ export const education: EducationEntry[] = [
 export const skills: SkillGroup[] = [
   {
     category: "Languages",
-    items: ["TypeScript", "Go", "Rust", "Python", "SQL", "Bash"],
-  },
-  {
-    category: "Backend & Infrastructure",
     items: [
-      "Node.js",
-      "PostgreSQL",
-      "Redis",
-      "Kafka",
-      "Kubernetes",
-      "Terraform",
-      "AWS",
-      "GCP",
+      "JavaScript",
+      "TypeScript",
+      "Python",
+      "Java",
+      "Dart",
+      "HTML",
+      "CSS",
+      "SQL",
     ],
   },
   {
-    category: "Frontend",
-    items: ["React", "Next.js", "Tailwind CSS", "Vite", "Storybook"],
+    category: "Frontend & Mobile",
+    items: [
+      "React",
+      "Redux",
+      "Flutter",
+      "Next.js",
+      "Electron",
+      "Vite",
+      "Bootstrap",
+      "Tailwind CSS",
+    ],
   },
   {
-    category: "Practices",
+    category: "Backend & Data",
     items: [
-      "Distributed Systems",
-      "API Design",
-      "Code Review",
-      "Mentorship",
-      "Technical Writing",
-      "Incident Response",
+      "FastAPI",
+      "Node.js",
+      "PostgreSQL",
+      "SQLite",
+      "REST APIs",
+      "JWT Authentication",
+      "Pydantic",
+    ],
+  },
+  {
+    category: "Tools & Practices",
+    items: [
+      "Git & GitHub",
+      "Docker & Docker Compose",
+      "Information Security",
+      "scikit-learn (TF-IDF / Naive Bayes)",
+      "Unit & Integration Testing",
+      "Agile / Sprint Workflow",
     ],
   },
 ];
 
 export const projects: Project[] = [
   {
-    slug: "ledger-cli",
-    title: "Ledger CLI",
+    slug: "smartspend",
+    title: "SmartSpend",
     tagline:
-      "A plain-text accounting tool for engineers who like the terminal.",
+      "AI-powered personal finance assistant. Cross-platform Flutter app with a FastAPI backend and ML-driven budgeting.",
     description:
-      "An opinionated double-entry accounting tool built around plain-text files, with reporting, forecasting, and an embedded query language. Used quietly by a few hundred people who care about owning their financial data.",
-    year: "2024",
-    role: "Designer & sole maintainer",
-    stack: ["Rust", "SQLite", "TUI"],
-    repo: "https://github.com/",
-    href: "https://example.com/",
+      "My senior capstone (ASE 485). A cross-platform mobile/web app that helps people with poor spending habits build better financial behaviors. Users log transactions, the ML pipeline auto-categorizes them, and the system generates personalized budgets and savings recommendations from their actual spending history.",
+    year: "2026",
+    role: "Solo developer (frontend, backend, ML, infra)",
+    stack: [
+      "Flutter",
+      "Dart",
+      "Python",
+      "FastAPI",
+      "PostgreSQL",
+      "scikit-learn",
+      "Docker",
+      "JWT",
+    ],
+    repo: "https://github.com/Jolteer/ase485-capstone-finance-ml",
     featured: true,
     highlights: [
-      "Custom query language with a hand-written recursive-descent parser.",
-      "Imports from 30+ financial institutions via OFX, CSV, and a small plugin API.",
-      "Has shipped 47 releases over two years with zero data-corruption bugs reported.",
+      "11-screen Flutter app with 6-provider state architecture, Material 3 light/dark theming, and persistent JWT-based auth via secure storage.",
+      "FastAPI backend with 18 endpoints across auth, transactions, budgets, goals, and ML — fully containerized with Docker Compose (API + PostgreSQL + pgAdmin).",
+      "ML layer using a TF-IDF + Naive Bayes pipeline for transaction categorization across 8 categories, plus rules-based budget generation and savings recommendations.",
+      "Layered backend architecture (repositories → services → schemas) and a comprehensive test suite covering models, providers, services, and ML.",
     ],
   },
   {
-    slug: "fieldnotes",
-    title: "Fieldnotes",
-    tagline: "A focused journaling app for engineers and researchers.",
+    slug: "chatgpt-clone",
+    title: "ChatGPT Clone",
+    tagline:
+      "A cross-platform desktop and web AI chat client built on the OpenAI Chat Completions API.",
     description:
-      "A markdown-first journaling app with a small, deliberate feature set: daily prompts, structured notes, and full-text search. Designed to be the antidote to bloated note-taking apps.",
-    year: "2023",
+      "An individual project for ASE 285. A React + Redux Toolkit chat application that runs as both a web app and a packaged Electron desktop app. Users can manage multiple persistent conversations, search within a chat, rename and delete individual conversations, and switch between dark and light themes.",
+    year: "2025",
+    role: "Sole developer",
+    stack: [
+      "React 18",
+      "Redux Toolkit",
+      "Vite",
+      "Electron",
+      "OpenAI API",
+      "JavaScript",
+    ],
+    repo: "https://github.com/Jolteer/ASE285_Individual",
+    featured: true,
+    highlights: [
+      "Shipped 8 features / 25 requirements across two sprints, all backed by 40 passing unit, integration, regression, and acceptance tests.",
+      "Secure OpenAI key handling via Electron preload IPC bridge or Vite environment variables, with conversation state persisted to localStorage.",
+      "Packaged for Windows, macOS, and Linux via electron-builder with a responsive UI that adapts down to mobile widths.",
+    ],
+  },
+  {
+    slug: "calendar",
+    title: "Calendar App",
+    tagline: "An ADHD-friendly calendar with monthly and weekly views.",
+    description:
+      "A modern calendar application designed around clarity and quick capture, with both monthly grid and weekly column views. Events are color-coded, persist locally in the browser, and the whole interface is keyboard-accessible. Backed by an optional FastAPI service.",
+    year: "2025",
     role: "Designer & engineer",
-    stack: ["TypeScript", "Next.js", "PostgreSQL"],
-    href: "https://example.com/",
+    stack: ["JavaScript", "HTML", "CSS", "Bootstrap 5", "Python", "FastAPI"],
+    repo: "https://github.com/Jolteer/Calendar",
     featured: true,
     highlights: [
-      "Designed an offline-first sync model with conflict-free replicated data types (CRDTs).",
-      "Reached 8,000 active users in the first six months without paid acquisition.",
-      "Featured in two newsletters and one print magazine.",
+      "Dual view modes (monthly grid + weekly columns) with a single shared event store.",
+      "Class-based ES6+ architecture, CSS-variable theming, and full keyboard navigation with focus indicators.",
+      "Standalone frontend that works with zero build step, plus an optional FastAPI backend for persistence.",
     ],
   },
   {
-    slug: "harbor-router",
-    title: "Harbor",
-    tagline: "An HTTP router for Go with a careful, minimal API.",
+    slug: "trip-planner",
+    title: "Trip Planner",
+    tagline:
+      "A personal trip-organization app that tracks every part of a trip in one place.",
     description:
-      "A small, dependency-free HTTP router for Go that prioritizes readability of route tables and explicit middleware composition. Used in production by half a dozen companies that I know of.",
-    year: "2022",
-    role: "Maintainer",
-    stack: ["Go"],
-    repo: "https://github.com/",
-    featured: true,
+      "A web app that helps travelers plan and track all aspects of a trip — flights, hotels, other bookings, day-by-day itinerary, budget, and a packing checklist — with everything auto-saved to local storage so a trip survives a refresh.",
+    year: "2025",
+    role: "Solo developer",
+    stack: ["HTML", "CSS", "Bootstrap 5", "JavaScript"],
+    repo: "https://github.com/Jolteer/Trip_Planner",
     highlights: [
-      "Under 1,200 lines of code, including comments.",
-      "Benchmarks comparable to the fastest routers in the Go ecosystem, with a more readable API.",
-      "Stable v1 API since 2022 — no breaking changes shipped.",
-    ],
-  },
-  {
-    slug: "atlas-config",
-    title: "Atlas Config",
-    tagline: "Type-safe configuration loading for distributed services.",
-    description:
-      "A small library that handles the unglamorous parts of configuration loading — file parsing, environment overrides, validation, and secret resolution — so that each service doesn't have to.",
-    year: "2022",
-    role: "Author",
-    stack: ["TypeScript", "Zod"],
-    repo: "https://github.com/",
-    highlights: [
-      "Adopted internally across 40+ services at my previous company.",
-      "Powers a small open-source ecosystem of validators and secret resolvers.",
-    ],
-  },
-  {
-    slug: "quietpost",
-    title: "QuietPost",
-    tagline: "A self-hosted micro-blogging platform.",
-    description:
-      "A minimalist self-hosted blogging platform designed for writers who want full ownership of their archive without the complexity of a CMS. Single-binary deploy, SQLite by default.",
-    year: "2021",
-    role: "Designer & engineer",
-    stack: ["Go", "SQLite", "HTML"],
-    repo: "https://github.com/",
-    highlights: [
-      "Single-binary deploy with embedded assets — no external dependencies.",
-      "Powers a handful of personal blogs I admire, including this one.",
-    ],
-  },
-  {
-    slug: "tide",
-    title: "Tide",
-    tagline: "A weekend project: an ambient ocean-sounds menu bar app.",
-    description:
-      "A small macOS menu bar app that plays curated ambient ocean recordings. Built in a weekend as an exercise in macOS native development; quietly downloaded a few thousand times.",
-    year: "2020",
-    role: "Solo project",
-    stack: ["Swift", "AppKit"],
-    href: "https://example.com/",
-    highlights: [
-      "Built in a single weekend; shipped to a small audience the following Monday.",
-      "Surprisingly enduring — still receives the occasional email of thanks.",
+      "Single-page dashboard pulling together flights, hotels, itinerary, and budget into one live overview.",
+      "Vanilla JS with browser localStorage persistence — no backend dependency, deployable as static files.",
     ],
   },
 ];
 
-export const posts: BlogPost[] = [
-  {
-    slug: "the-quiet-discipline-of-good-engineering",
-    title: "The Quiet Discipline of Good Engineering",
-    excerpt:
-      "Some of the best engineering work I've witnessed has been almost invisible. A reflection on the kind of craft that doesn't trend on social media.",
-    date: "2025-09-12",
-    readingTime: "7 min read",
-    tags: ["Craft", "Engineering Culture"],
-  },
-  {
-    slug: "designing-apis-that-age-well",
-    title: "Designing APIs That Age Well",
-    excerpt:
-      "Notes from a decade of API design — what I've learned about versioning, naming, and the long-running cost of small mistakes.",
-    date: "2025-06-04",
-    readingTime: "11 min read",
-    tags: ["API Design", "Software Architecture"],
-  },
-  {
-    slug: "on-mentorship",
-    title: "On Mentorship",
-    excerpt:
-      "What I've come to believe about mentoring early-career engineers, after seven years of getting it wrong in interesting ways.",
-    date: "2025-02-18",
-    readingTime: "6 min read",
-    tags: ["Mentorship", "Career"],
-  },
-];
+export const posts: BlogPost[] = [];
